@@ -1,0 +1,124 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#65C336;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+#dropdown{
+  display: none;
+  background-color: gray;
+  border: 1px solid var(--main-site-color);
+  color: var(--main-site-color);
+  width: 200px;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#dropdown li{
+  padding: 0.3rem;
+}
+
+.container{
+  width: 80%;
+}
+
+.btn{
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--main-site-color);
+  border-radius: 5px;
+  background-color: white;
+  color: var(--main-site-color);
+}
+
+.btn:hover{
+  transition: 0.2s;
+  background-color: rgb(247, 247, 247);
+}
+
+.btn-account{
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+
+.btn-account .btn{
+  display: block;
+  margin-left: auto;
+}
+
+.container {
+  border: solid 1px;
+  width: 80vw;
+  margin: auto;
+  box-shadow: 1px 0px 10px 1px black;
+  color: white;
+}
+
+#footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 98%;
+  padding: 1rem;
+  background-color: #444842;
+  color: white;
+}
+
+.plus{
+  border-radius: 10px;
+  font-size: 10px;
+}
+#player-list{
+  background-color: teal;
+}
+
+#player-list .detail{
+  display: inline-block;
+    padding-left: 1rem;
+    vertical-align: top;
+}
+
+#player-list .player{
+  width: 100%;
+    padding: 0.5rem;
+}
+
+#player-list .Name {
+  font-weight: bold;
+  font-size: 2rem;
+  vertical-align: top;
+

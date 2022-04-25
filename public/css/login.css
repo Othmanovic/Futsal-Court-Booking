@@ -1,0 +1,197 @@
+:root{
+    /* --main-site-color: rgb(109, 213, 27); */
+    --main-site-color: #65C336;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    padding: 1rem;
+}
+
+hr{
+    width: 100%;
+    border:1px solid var(--main-site-color);
+    margin: 0.5rem 0;
+}
+
+header{
+    display: inline-block;
+    margin-left: 20%;
+    background-color: var(--main-site-color);
+    color: white;
+    width: 80%;
+}
+
+header>*{
+    display: inline-block;
+    margin: 2rem;
+    margin-right: 0;
+    vertical-align: -webkit-baseline-middle;
+}
+
+section{
+    width:100%;
+    margin-left: auto;
+    padding: 2rem; /*Free to change*/
+    background-image: url(../img/b.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    right: 0; 
+}
+
+nav{
+    display: inline-block;
+    position: fixed;
+    height: 100%;
+    background-color: var(--main-site-color);
+    color: white;
+    width: 20%;
+}
+
+nav .container{
+    margin-left: auto;
+}
+
+nav ul>li{
+    width: 100%;
+    padding: 0.7rem 1rem;
+}
+
+nav ul li:hover{
+    background-color: white;
+    color: var(--main-site-color);
+    font-size: 1.2rem;
+}
+
+#dropdown{
+    display: none;
+    background-color: transparent;
+    border: 1px solid var(--main-site-color);
+    color: var(--main-site-color);
+    width: 200px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#dropdown li{
+    padding: 0.3rem;
+}
+
+.container{
+    width: 80%;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--main-site-color);
+    border-radius: 5px;
+    background-color: white;
+    color: var(--main-site-color);
+}
+
+.btn:hover{
+    transition: 0.2s;
+    background-color: rgb(247, 247, 247);
+}
+
+.btn-account{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+
+.btn-account .btn{
+    display: block;
+    margin-left: auto;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #444842;
+    color: white;
+}
+
+#log{
+    margin: auto;
+    color: green;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    margin-top: 5rem;
+    font-family: comic sans MS;
+}
+
+.email{
+    width: 30rem;
+    height: 2rem;
+    padding: 1rem;
+    color: black;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+.password{
+    
+    color: black;
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    width: 30rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+#forgot {
+    
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 1rem;
+    margin-block-end: 1rem;
+}
+
+#forgot a{
+    color: skyblue;
+}
+
+
+#btn{
+
+   margin-top: 1rem;
+    margin: auto;   
+    text-align: center;
+    background-color: black;
+    color: green;
+    border-radius: 10px;
+    width: 15em;
+    height: 2rem;
+}
+#btn >input{
+    background-color: black;
+    color: green;
+    border-radius: 10px;
+    width: 15em;
+    height: 2rem;
+}
+

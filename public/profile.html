@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <title>Profile</title>
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <h1>FUTSAL COURT BOOKING</h1>
+                <h2>Profile</h2>
+                <div class="container">
+                    <ul type="none">
+                        <a href="home.html"><li>Home</li></a>
+                        <a href="map.html"><li>Map</li></a>
+                        <a href="Player.html"><li>Players</li></a>
+                        <a href="Team.html"><li>Teams</li></a>
+                        <a href="MyBooking.html"><li>My Bookings</li></a>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!------------------------------------>
+        <div class="btn-account">
+            <button id="user" class="btn" onclick="dropdown()">User</button>
+            <ul id="dropdown" style="display: none;">
+                <li>View profile</li>
+                <hr>
+                <li>Log out</li>
+            </ul>
+        </div>
+        <section>
+            <!--Write your content here-->
+            <div class="container">
+                <h1>Profile</h1>
+                <img src="img/Profile pic_default.jpg" class="img" alt="Profile picture">
+                <div id="info">
+                    <p>Name&Tab;:<span id="name"></span></p>
+                    <p>Age&Tab;:<span id="age"></span></p>
+                    <p>Exp&Tab;:<span id="exp"></span></p>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------>
+        <div id="footer">
+            <p>Copyright FCB -Futsal Court Booking&copy;- 2019.</p>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/playerMockData.js"></script>
+    </body>
+</html>

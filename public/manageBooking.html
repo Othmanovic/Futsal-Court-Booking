@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+    /* --main-site-color: rgb(109, 213, 27); */
+    --main-site-color: #65C336;
+}
+
+.collapsible {
+  background-color: var(--main-site-color);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(80, 160, 41);
+}
+
+.collapsible span{
+    padding: 2rem;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  border:1px solid rgb(80, 160, 41);
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.stuff{
+    display: inline-block;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 100%;
+    align-content: center;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--main-site-color);
+    border-radius: 5px;
+    background-color: white;
+    color: var(--main-site-color);
+}
+
+.btn:hover{
+    transition: 0.2s;
+    background-color: rgb(247, 247, 247);
+}
+</style>
+</head>
+<body>
+
+<button class="collapsible">
+    <span>#B0001</span>
+    <span>KDOJ</span>
+    <span>OTHMAN</span>
+    <span>Tue, 14-MAY-2019</span>
+    <span>2:00PM</span>
+</button>
+<div class="content">
+    <div class="stuff">
+        <p>#P0001 Omar</p>
+        <p>#P0001 Omar</p>
+        <p>#P0001 Omar</p>
+        <p>#P0001 Omar</p>
+    </div>
+    <div class="stuff">
+        <p><button class="btn">Edit</button></p>
+        <p><button class="btn">Deny</button></p>
+        <p><button class="btn">Accept</button></p>
+    </div>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

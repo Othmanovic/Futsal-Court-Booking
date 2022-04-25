@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/team.css">
+    <script src="../js/Team.js"></script>
+    <title>FCB Court Booking</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      
+            <!------------------------------------>
+            <section id="main">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                    <!--Write your content here-->
+                    <h1>Team</h1>
+        <h3>You Are Not in Any Teams Right Now..</h3>
+        <div class="tab">
+            <button class="tablinks" onclick="openTeam(event, 'Search')">Search Team</button>
+            <button class="tablinks" onclick="openTeam(event, 'Create')">Create team</button>
+        
+
+        <div id="Search" class="tabcontent">
+            <h3>Want to Search a Team?</h3>
+            <h3>click below</h3>
+            <input type="button" class="button" value="SEARCH TEAM">
+        </div>
+
+        <div id="Create" class="tabcontent">
+            <form >
+                <label for="Team Name"><b>Team Name: </b></label><br>
+                <input type="text" placeholder="Team Name" name="name"><br>
+                <label for="Contact No"><b>Contact No</b></label><br>
+                <input type="text" placeholder="Contact No" name="contact" ><br>
+                <label for="Address"><b>Address</b></label><br>
+                <input type="text" placeholder="Address" name="address">
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+         </div>
+        </div>
+                </section >
+                <!------------------------------------>
+                <div id="footer">
+                    <p>Copyright FCB -Futsal Court Booking&copy;- 2019.</p>
+                </div>
+            <div class="btn-account">
+                <button class="btn" onclick="dropdown()" onblur="dropdown()">User</button>
+                <ul type="none" id="dropdown">
+                    <a>View profile</a>
+                    <hr>
+                    <a>Log out</a>
+                </ul>
+            <!---------------------------------------->
+</div>
+</body>
+</html>

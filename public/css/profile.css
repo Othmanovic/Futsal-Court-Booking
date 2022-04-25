@@ -1,0 +1,13 @@
+#info>p{
+    margin: 0.5rem 0;
+    border-left: 1px solid var(--main-site-color);
+    border-right: 1px solid var(--main-site-color);
+}
+
+.img{
+    width:15%;
+    padding: 0.3rem;
+    margin: 1rem 0;
+    border: 2px solid var(--main-site-color);
+    border-radius: 50%;
+}

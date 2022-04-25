@@ -1,0 +1,9 @@
+input{
+    display: block;
+    width: 30rem;
+    border: 2px solid var(--main-site-color);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 0.3rem auto;
+    
+}

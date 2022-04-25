@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/MyBooking.css">
+    <script src="js/script.js"></script>
+	<script src="js/mybooking.js"></script>
+    <title>MyBooking</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h1>FUTSAL COURT BOOKING</h1>
+            <h2>Profile</h2>
+            <div class="container">
+                <ul type="none">
+                    <a href="home.html"><li>Home</li></a>
+					<a href="map.html"><li>Map</li></a>
+                    <a href="Player.html"><li>Players</li></a>
+					<a href="Team.html"><li>Teams</li></a>
+					<a href="MyBooking.html"><li>My Bookings</li></a>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------>
+    <section>
+        <!--My booking-->
+        <div id="MyBooking">
+            <h2 id="top">You do not have any ongoing bookings yet</h2>
+
+            <div id="btn">
+                <button onclick="goToBook()">Book a court</button>
+
+            </div>
+           
+        </div>
+
+        <!-- Book a court -->
+        <div id="Bookcourt" style="display: none;">
+            <p>Book Your Court</p>
+            <div id="court">Court
+                <select id="courtList">
+                    <option value="KDOJ">KDOJ</option>
+                    <option value="KTC">KTC</option>
+                    <option value="K10">K10</option>
+                    <option value="KTDI">KTDI</option>
+                    <option value="KTHO">KTHO</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div class ="date">
+                Date: <input type="date" id="date" >
+            </div>
+            <div class="time">
+                Time: <input type="time" id="time">
+            </div>
+            <hr>
+            <div class ="bMode">
+                Booking mode
+                <select id="bMode">
+                    <option value="individual">individual</option>
+                    <option value="team">team</option>
+
+
+                </select>
+            </div>
+
+            <div id="addPlayer">
+                <button>Add player</button>
+            </div>
+
+            <div id="text">*At least 2 more players</div>
+            <div id="submit">
+                <button onclick="create()">Submit booking</button>
+            </div>
+        </div>
+        <!-- -->
+
+
+
+
+    </section>
+    <div class="btn-account">
+        <button class="btn" onclick="dropdown()" onblur="dropdown()">User</button>
+        <ul type="none" id="dropdown" style="display:none;">
+            <li>View profile</li>
+            <hr>
+           <a href="../login/Login.html"> <li>Log out</li></a>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>Copyright FCB -Futsal Court Booking&copy;- 2019.</p>
+    </div>
+</body>
+
+</html>

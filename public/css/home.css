@@ -1,0 +1,119 @@
+/* section p{
+    padding-left: 50px;
+    padding-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5rem;
+    color: white;
+
+
+} */
+#paragraph{
+    padding-left: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+.background{
+    background-image: url(../img/bc.jpg);
+    background-size: cover;
+    
+ }
+
+ .background p{
+    padding-left: 50px;
+    padding-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5rem;
+    color: white;
+ }
+
+.gallery{
+    margin-top:  1rem;
+    padding-left: 150px;
+}
+.gallery div:nth-child(1){
+    background-image: url(../img/p1.jpg);
+    background-size: cover;
+    
+   
+}
+.gallery div:nth-child(2){
+    background-image: url(../img/p2.jpg) ;
+    background-size: cover;
+    
+    
+   
+    
+   
+}
+.gallery div:nth-child(3){
+    background-image: url(../img/2.jpg);
+    background-size: cover;
+    
+   
+}
+.gallery2{
+    margin-top:  1rem;
+    padding-left: 150px;
+    padding-bottom: 2rem;
+}
+.gallery2 div:nth-child(1){
+
+    background-image: url(../img/p4.jpg);
+    background-size: cover;
+}
+
+.gallery2 div:nth-child(2){
+
+    background-image: url(../img/p3.jpg);
+    background-size: cover;
+}
+
+.gallery2 div:nth-child(3){
+
+    background-image: url(../img/p5.jpg);
+    background-size: cover;
+}
+
+
+
+.gallery  div{
+    width: 230px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+    filter:grayscale(50%);
+    transition: all 0.4s ease;
+    color: white;
+    
+    font-size: 2rem;
+    display: inline-block;
+}
+.gallery2  div{
+    width: 230px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+    filter:grayscale(50%);
+    transition: all 0.4s ease;
+    color: white;
+    
+    font-size: 2rem;
+    display: inline-block;
+}
+.gallery div:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+
+
+
+}
+.gallery2 div:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+
+
+
+}
+
